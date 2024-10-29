@@ -19,14 +19,14 @@
      <p>Inventory Management System</p>
 </div>
 <div class="link-container"> 
-        <a href="#about">Dashboard</a>
+        <a href="{{ route ('dashboard') }}">Dashboard</a>
         <button class="dropdown-btn">Inventory Management
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="#1">Flowers</a>
-            <a href="#2">Candles</a>
-            <a href="#3">Orders</a>
+            <a href="{{ route('flowers') }}">Flowers</a>
+            <a href="{{ route('candles') }}">Candles</a>
+            <a href="{{ route('orders') }}">Orders</a>
         </div>
         <a href="#contact">Sales Report</a>
     </div>
