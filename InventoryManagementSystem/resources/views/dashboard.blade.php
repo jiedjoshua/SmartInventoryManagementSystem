@@ -31,7 +31,7 @@
         <a href="#contact">Sales Report</a>
     </div>
 
-  <div class="logout-container"> <!-- New container for the logout button -->
+  <div class="logout-container"> 
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
         </form>
@@ -52,35 +52,37 @@
 
     <div class="box-container">
         
-            <div class="box1">
-                <p>Total Products
+            <div class="box">
+                <p>Low Stock Flowers
                     <br><br>
-                    2
+                    <p style="font-size: 30px;"> {{ $lowStockFlowers }} </p>
                 </p>
             </div>
             <div class="box">
-                <p>Low Stock
+                <p>Low Stock Candles
                     <br><br>
-                    25
+                    <p style="font-size: 30px;"> {{ $lowStockCandles }} </p>
                 </p>
             </div>
             <div class="box">
-                <p>Out of Stock
+                <p>Out of Stock Flowers
                     <br><br>
-                    5
+                    <p style="font-size: 30px;"> {{ $outOfStockFlowers }} </p>
+                </p>
+            </div>
+
+            <div class="box" style="width: 14%;">
+                <p>Out of Stock Candles
+                    <br><br>
+                    <p style="font-size: 30px;"> {{ $outOfStockCandles }} </p>
                 </p>
             </div>
             
 
-            <div class="links">
-                <a href="{{ route('flowers') }}">Flowers Inventory</a>
-                <a href="{{ route('candles') }}">Candles Inventory</a>
-                <a href="{{ route('orders') }}">Orders &emsp; &emsp;&emsp;&emsp;</a>
-            </div>
     </div>
              
    
-        <h4 class="aligned-heading">Sales Report Summary &nbsp;</h4>
+        <h4 class="aligned-heading">Sales Report Summary</h4>
        
 
     <div class="sales">   

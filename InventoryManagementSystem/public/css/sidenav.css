@@ -120,9 +120,10 @@ body {
 /* DASHBOARD CONTENT NILAGAY NI KEZ*/
 .aligned-heading {
     display: inline-block;
-    margin: 15px 5px 3% 10px; 
+    margin: 15px 5px 3% 1px; 
     color: #713737;
-    font-weight: lighter;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .aligned-line {
@@ -139,7 +140,6 @@ body {
     
         display: flex;
         gap: 20px; /* Space between boxes */
-        justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 5%;
     }
@@ -148,7 +148,7 @@ body {
         background-color: #FFF7F1; /* Light gray background */
         border-radius: 15px;
         padding: 3%;
-        width: 25%; /* Adjust width as needed */
+        width: 13%; /* Adjust width as needed */
         text-align: left;
         box-shadow: #F8F3F0; /* Optional shadow */
         border: 2px solid #713737; 
@@ -156,10 +156,10 @@ body {
 
     }
     .box1 {
-        background-color: #713737; /* Light gray background */
+        background-color: #FFF7F1; /* Light gray background */
         border-radius: 15px;
         padding: 3%;
-        width: 25%; /* Adjust width as needed */
+        width: 13%; /* Adjust width as needed */
         text-align: left;
         box-shadow: #F8F3F0; /* Optional shadow */
         border: 2px solid #713737; 
@@ -168,15 +168,17 @@ body {
     }
     
     .box p {
-        font-weight:;
-        font-size: 15px;
+        font-weight:bold;
+        font-size: 20px;
         color: #713737;
+        line-height: 90%;
         margin: 0;
     }
     .box1 p {
         font-weight: bold;
-        font-size: 15px;
-        color: #FDFDFD;
+        font-size:20px;
+        color: #713737;
+        line-height: 90%;
         margin: 0;
     }
     
