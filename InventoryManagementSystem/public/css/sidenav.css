@@ -116,3 +116,114 @@ body {
     float: right;
     padding-right: 8px;
 }
+
+/* DASHBOARD CONTENT NILAGAY NI KEZ*/
+.aligned-heading {
+    display: inline-block;
+    margin: 15px 5px 3% 10px; 
+    color: #713737;
+    font-weight: lighter;
+}
+
+.aligned-line {
+    display: inline-block;
+    border: none;
+    height: 1px;           /* Set the thickness of the line */
+    background-color:#713737;
+    width: 80%; /* Adjust to the width you want */
+    margin: 5px 0 0 0; /* Adjust top margin for spacing */
+    vertical-align: middle; /* Aligns with the heading */
+}
+
+.box-container {
+    
+        display: flex;
+        gap: 20px; /* Space between boxes */
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 5%;
+    }
+    
+    .box {
+        background-color: #FFF7F1; /* Light gray background */
+        border-radius: 15px;
+        padding: 3%;
+        width: 25%; /* Adjust width as needed */
+        text-align: left;
+        box-shadow: #F8F3F0; /* Optional shadow */
+        border: 2px solid #713737; 
+       
+
+    }
+    .box1 {
+        background-color: #713737; /* Light gray background */
+        border-radius: 15px;
+        padding: 3%;
+        width: 25%; /* Adjust width as needed */
+        text-align: left;
+        box-shadow: #F8F3F0; /* Optional shadow */
+        border: 2px solid #713737; 
+        
+
+    }
+    
+    .box p {
+        font-weight:;
+        font-size: 15px;
+        color: #713737;
+        margin: 0;
+    }
+    .box1 p {
+        font-weight: bold;
+        font-size: 15px;
+        color: #FDFDFD;
+        margin: 0;
+    }
+    
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-end;
+        
+         text-align: center;
+        margin-right: 5%;
+        padding: 2%;
+        width: 25%; /* Adjust width as needed */
+      
+    }
+    
+    .links a {
+      
+        text-decoration: none;
+        font-size: 15px;
+        
+        transition: color 0.3s;
+        color:#713737;
+    font-family: 'Playfair Display', serif;
+    }
+    
+    .links a:hover {
+        color: #ff85a2; /* Hover color */
+    }
+    
+    .graph {
+        background-color: #f0f0f0; /* Light gray background */
+       
+        padding: 12%;
+        width: 69%; /* Adjust width as needed */
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        border: 1px solid #713737; 
+       
+
+    }
+
+
+    .sales{
+        text-align: center;
+        font-size: 14px;
+        color: #713737;
+    font-weight: lighter;
+    }
