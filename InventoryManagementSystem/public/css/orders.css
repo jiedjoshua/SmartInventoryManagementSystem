@@ -1,14 +1,15 @@
 body {
-    display: flex; 
-    margin: 0; 
+    display: flex;
+    margin: 0;
 }
 
 .content {
-    margin-left: 360px; 
+    margin-left: 360px;
     margin-top: 18px;
-    padding: 20px; 
-    width: calc(100% - 300px); 
-    background-color: #FDFDFD; 
+    margin-right: 50px;
+    padding: 20px;
+    width: calc(100% - 300px);
+    background-color: #FDFDFD;
 }
 
 .content h2 {
@@ -16,6 +17,13 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     font-size: 30px;
+}
+
+.content h3 {
+    color:#713737;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .sidenav {
@@ -26,16 +34,16 @@ body {
     top: 0;
     left: 0;
     background-color: #713737;
-    overflow-y: auto; 
+    overflow-y: auto;
     padding-top: 20px;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .sidenav a, .dropdown-btn {
-    position: relative; 
+    position: relative;
     padding: 20px 8px 20px 1px;
     text-decoration: none;
     text-align: center;
@@ -76,7 +84,7 @@ body {
 }
 
 .logout-container {
-    margin-top: auto; 
+    margin-top: auto;
     margin-bottom: 70px;
 }
 
@@ -91,8 +99,8 @@ body {
 }
 
 .dropdown-container a:hover {
-    background-color: #713737; 
-    color: #FDFDFD; 
+    background-color: #713737;
+    color: #FDFDFD;
 }
 
 .dropdown-container a {
@@ -100,8 +108,8 @@ body {
 }
 
 .main {
-    margin-left: 200px; 
-    font-size: 20px; 
+    margin-left: 200px;
+    font-size: 20px;
     padding: 0px 10px;
 }
 
@@ -135,7 +143,10 @@ body {
     font-weight: 600;
 }
 
+.content tr:nth-child(even) {
+    background-color: #FDFDFD;
+}
+
 .content tr:hover {
     background-color: #F1E5E5; /* Hover effect */
 }
-
