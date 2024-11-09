@@ -43,6 +43,53 @@
 
 <div class="content">
         <h2>Dashboard</h2>
+
+             <!--KEZ--> 
+    <div>     
+        <h4 class="aligned-heading">Inventory Summary </h4>
+        <hr class="aligned-line">
+    </div>
+
+    <div class="box-container">
+        
+            <div class="box1">
+                <p>Total Products
+                    <br><br>
+                    2
+                </p>
+            </div>
+            <div class="box">
+                <p>Low Stock
+                    <br><br>
+                    25
+                </p>
+            </div>
+            <div class="box">
+                <p>Out of Stock
+                    <br><br>
+                    5
+                </p>
+            </div>
+            
+
+            <div class="links">
+                <a href="{{ route('flowers') }}">Flowers Inventory</a>
+                <a href="{{ route('candles') }}">Candles Inventory</a>
+                <a href="{{ route('orders') }}">Orders &emsp; &emsp;&emsp;&emsp;</a>
+            </div>
+    </div>
+             
+   
+        <h4 class="aligned-heading">Sales Report Summary &nbsp;</h4>
+       
+
+    <div class="sales">   
+        <div class="graph">
+            
+        </div>
+                <p >Monthly Sales Summary</p>
+   </div> 
+
         
     </div>
 </body>
