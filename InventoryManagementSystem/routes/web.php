@@ -16,7 +16,11 @@ Route::get('/flowers', [FlowersController::class, 'index'])->name('flowers');
 Route::get('/candles', [CandlesController::class, 'index'])->name('candles');
 Route::get('/orders', [OrdersController::class, 'index'])->name('orders');
 
-Route::get('/sales', [SalesController::class, 'index'])->name('sales');
+Route::get('/sales', [SalesController::class, 'showSalesData'])->name('sales');
+Route::get('/filter-sales', [SalesController::class, 'filterSales'])->name('filter.sales');
+Route::get('/sales-overview', [SalesController::class, 'getSalesOverview']);
+
+
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
