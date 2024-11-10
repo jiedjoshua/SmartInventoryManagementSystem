@@ -18,8 +18,8 @@
      <h1>Petals & Posies</h1>
      <p>Inventory Management System</p>
 </div>
-<div class="link-container"> 
-    <a href="{{ route ('dashboard') }}">Dashboard</a>
+<div class="link-container">
+<a href="{{ route ('dashboard') }}">Dashboard</a>
         <button class="dropdown-btn">Inventory Management
             <i class="fa fa-caret-down"></i>
         </button>
@@ -43,16 +43,38 @@
 
 <div class="content">
         <h2>Orders</h2>
+        <h3>Predicted orders for {{ $nextMonth }}</h3>
         <table border="1" style="width:100%; text-align:left; margin-top: 20px;">
             <tr>
-                <th>Seasonal</th>
-                <th>Trending</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
             </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+        </table>
+        <br>
+        <br>
+
+        <table>
             <tr>
-                <td></td>
+                <th>Product Namer</th>
+                <th>Category</th>
+                <th>Seasonal Trend</th>
+                <th>Demand</th>
             </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
         </table>
     </div>
+
 </body>
 
 <script src="{{ asset('js/navbar.js') }}"></script>
