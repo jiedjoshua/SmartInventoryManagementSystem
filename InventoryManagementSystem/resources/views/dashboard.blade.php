@@ -51,7 +51,7 @@
         <hr class="aligned-line">
     </div>
 
-    <div class="box-container">
+    <div class="box-container" style="margin-bottom: 40px;">
         
             <div class="box">
                 <p>Low Stock Flowers
@@ -84,7 +84,7 @@
              
 
         <div>
-        <h4 class="aligned-heading" style="margin-bottom: 20px;">Stock Report</h4>
+        <h4 class="aligned-heading" style="margin-bottom: 20px; margin-top:0px">Stock Report</h4>
         <br>
             <label for="productType">Select Product Type:</label>
             <select id="productType" onchange="updateGraph()">
@@ -96,7 +96,7 @@
 
     <div class="sales" style="width: 94%;">   
        
-        <canvas id="stockGraph" width="400" height="100"></canvas>
+        <canvas id="stockGraph" width="400" height="160"></canvas>
     
                 
    </div> 
@@ -129,7 +129,7 @@
                     data: data,
                     borderColor: 'rgba(113, 55, 55, 1)',
                     backgroundColor: 'rgba(113, 55, 55, 0.2)',
-                    borderWidth: 1
+                    borderWidth: 2
                 }]
             },
             options: {

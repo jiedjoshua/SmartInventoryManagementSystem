@@ -20,18 +20,22 @@ public function filterSales(Request $request)
 {
     $month = $request->input('month');
 
-    // Fetch flower sales based on the selected month
+    // Fetch flower sales for the month in 2024
     $flowerSales = Flower::whereHas('salesData', function ($query) use ($month) {
-        $query->where('month', $month);
+        $query->where('month', $month)
+              ->where('year', 2024);  // Ensure the year is 2024
     })->with(['salesData' => function ($query) use ($month) {
-        $query->where('month', $month);
+        $query->where('month', $month)
+              ->where('year', 2024);  // Ensure the year is 2024
     }])->get();
 
-    // Fetch candle sales based on the selected month
+    // Fetch candle sales for the month in 2024
     $candleSales = Candle::whereHas('salesData', function ($query) use ($month) {
-        $query->where('month', $month);
+        $query->where('month', $month)
+              ->where('year', 2024);  // Ensure the year is 2024
     })->with(['salesData' => function ($query) use ($month) {
-        $query->where('month', $month);
+        $query->where('month', $month)
+              ->where('year', 2024);  // Ensure the year is 2024
     }])->get();
 
     // Return the data as JSON
@@ -55,13 +59,17 @@ public function filterSales(Request $request)
     ]);
 }
 
+
+
 public function getSalesOverview()
 {
     // Initialize the sales array
     $sales = [];
 
-    // Fetch flower sales data grouped by month
-    $flowerSales = Flower::with('salesData')->get(); // Assuming 'salesData' is a relationship
+    // Fetch flower sales data for the year 2024, grouped by month
+    $flowerSales = Flower::with(['salesData' => function ($query) {
+        $query->where('year', 2024); // Filter by year 2024
+    }])->get();
 
     foreach ($flowerSales as $flower) {
         foreach ($flower->salesData as $sale) {
@@ -78,20 +86,22 @@ public function getSalesOverview()
         }
     }
 
-    // Fetch candle sales data grouped by month
-    $candleSales = Candle::with('salesData')->get();  // Assuming 'salesData' is a relationship
+    // Fetch candle sales data for the year 2024, grouped by month
+    $candleSales = Candle::with(['salesData' => function ($query) {
+        $query->where('year', 2024); // Filter by year 2024
+    }])->get();
 
     foreach ($candleSales as $candle) {
         foreach ($candle->salesData as $sale) {
-            // Directly use the 'Month' value from the sales data
-            $month = $sale->month; // Assuming 'month' column holds the month name (e.g., 'January')
+           
+            $month = $sale->month;
 
-            // Ensure the month key exists in the sales array
+          
             if (!isset($sales[$month])) {
-                $sales[$month] = 0; // Initialize to 0 if it doesn't exist
+                $sales[$month] = 0;
             }
 
-            // Add the quantity sold for this sale to the corresponding month
+          
             $sales[$month] += $sale->quantity_sold;
         }
     }
@@ -111,6 +121,7 @@ public function getSalesOverview()
     // Return the data as JSON to be used in the frontend
     return response()->json($salesData);
 }
+
 
 
 

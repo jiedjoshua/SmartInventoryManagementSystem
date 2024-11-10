@@ -61,6 +61,7 @@
             <option value="December">December</option>
         </select>
     </div>
+    
 
     <div class="row" style="display: flex;">
         <div class="column" style="flex: 50%; padding: 10px;">
@@ -120,7 +121,7 @@
                 // Create the chart with dynamic data
                 const ctx = document.getElementById('salesChart').getContext('2d');
                 const salesChart = new Chart(ctx, {
-                    type: 'bar', // or 'bar', 'pie', etc.
+                    type: 'line', 
                     data: {
                         labels: months,
                         datasets: [{
