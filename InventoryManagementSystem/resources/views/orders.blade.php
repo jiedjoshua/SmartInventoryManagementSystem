@@ -43,12 +43,12 @@
 
 <div class="content">
         <h2>Orders</h2>
-        <h3>Predicted orders this month</h3>
+        <h3>Predicted orders for {{ $nextMonth }}</h3>
         <table border="1" style="width:100%; text-align:left; margin-top: 20px;">
             <tr>
-                <th>Order List</th>
+                <th>Product Name</th>
+                <th>Category</th>
                 <th>Quantity</th>
-                <th>Item</th>
             </tr>
     <tr>
         <td></td>
@@ -61,10 +61,14 @@
 
         <table>
             <tr>
-                <th>Trending Flower</th>
-                <th>In Season</th>
+                <th>Product Namer</th>
+                <th>Category</th>
+                <th>Seasonal Trend</th>
+                <th>Demand</th>
             </tr>
     <tr>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
     </tr>
