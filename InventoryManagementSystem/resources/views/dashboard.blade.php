@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
     <title>Dashboard</title>
@@ -81,19 +82,84 @@
 
     </div>
              
-   
-        <h4 class="aligned-heading">Sales Report Summary</h4>
-       
 
-    <div class="sales">   
-        <div class="graph">
-            
+        <div>
+        <h4 class="aligned-heading" style="margin-bottom: 20px;">Stock Report</h4>
+        <br>
+            <label for="productType">Select Product Type:</label>
+            <select id="productType" onchange="updateGraph()">
+                <option value="flowers">Flowers</option>
+                <option value="candles">Candles</option>
+            </select>
         </div>
-                <p >Monthly Sales Summary</p>
+
+
+    <div class="sales" style="width: 94%;">   
+       
+        <canvas id="stockGraph" width="400" height="100"></canvas>
+    
+                
    </div> 
 
         
     </div>
+
+<script>
+    // Get data from Blade variables
+    const flowerNames = @json($flowerNames);
+    const flowerQuantities = @json($flowerQuantities);
+    const candleNames = @json($candleNames);
+    const candleQuantities = @json($candleQuantities);
+
+    // Initial chart setup (default is 'flowers')
+    let chart = null;
+    const ctx = document.getElementById('stockGraph').getContext('2d');
+
+    function createChart(labels, data) {
+        if (chart) {
+            chart.destroy();
+        }
+
+        chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Stock Quantity',
+                    data: data,
+                    borderColor: 'rgba(113, 55, 55, 1)',
+                    backgroundColor: 'rgba(113, 55, 55, 0.2)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    // Function to update the graph when a product type is selected
+    function updateGraph() {
+        const productType = document.getElementById('productType').value;
+        
+        if (productType === 'flowers') {
+            createChart(flowerNames, flowerQuantities);
+        } else if (productType === 'candles') {
+            createChart(candleNames, candleQuantities);
+        }
+    }
+
+    // Initialize the chart with flowers data by default
+    updateGraph();
+</script>
+
+
+   
+
 </body>
 
 <script src="{{ asset('js/navbar.js') }}"></script>
