@@ -8,6 +8,8 @@ use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SalesController;
 
+
+
 Route::get('/', function () {
     return redirect()->route('login');
 });
@@ -20,10 +22,7 @@ Route::get('/sales', [SalesController::class, 'showSalesData'])->name('sales');
 Route::get('/filter-sales', [SalesController::class, 'filterSales'])->name('filter.sales');
 Route::get('/sales-overview', [SalesController::class, 'getSalesOverview']);
 
-
-
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
 
 
 Route::middleware('auth')->group(function () {
