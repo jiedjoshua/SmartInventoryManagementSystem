@@ -28,7 +28,7 @@
             <a href="{{ route('candles') }}">Candles</a>
             <a href="{{ route('orders') }}">Orders</a>
         </div>
-        <a href="#contact">Sales Report</a>
+        <a href="{{ route('sales') }}">Sales Report</a>
     </div>
 
   <div class="logout-container"> <!-- New container for the logout button -->

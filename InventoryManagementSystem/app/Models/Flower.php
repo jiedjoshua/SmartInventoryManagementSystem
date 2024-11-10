@@ -14,4 +14,9 @@ class Flower extends Model
         'quantity',
         'price',
     ];
+
+    public function salesData()
+    {
+        return $this->morphMany(SalesData::class, 'product');
+    }
 }
