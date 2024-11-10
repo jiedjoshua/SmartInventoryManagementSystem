@@ -45,7 +45,7 @@
         <h2>Candles</h2>
         <table border="1" style="width:100%; text-align:left; margin-top: 20px;">
             <tr>
-                <th>Candle Name</th>
+                <th>Product</th>
                 <th>Quantity</th>
                 <th>Price</th>
             </tr>

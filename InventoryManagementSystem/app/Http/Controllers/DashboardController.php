@@ -11,8 +11,8 @@ class DashboardController extends Controller
         public function index()
     {
         // Low stock counts
-        $lowStockFlowers = Flower::where('quantity', '<', 20)->where('quantity', '>', 0)->count();
-        $lowStockCandles = Candle::where('quantity', '<', 20)->where('quantity', '>', 0)->count();
+        $lowStockFlowers = Flower::where('quantity', '<', 20)->where('quantity', '>', 1)->count();
+        $lowStockCandles = Candle::where('quantity', '<', 20)->where('quantity', '>', 1)->count();
         
         // Out of stock counts
         $outOfStockFlowers = Flower::where('quantity', '=', 0)->count();
