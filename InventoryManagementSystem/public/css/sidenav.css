@@ -210,17 +210,7 @@ body {
         color: #ff85a2; /* Hover color */
     }
     
-    .graph {
-        background-color: #f0f0f0; /* Light gray background */
-       
-        padding: 12%;
-        width: 69%; /* Adjust width as needed */
-        text-align: left;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-        border: 1px solid #713737; 
-       
-
-    }
+   
 
 
     .sales{
