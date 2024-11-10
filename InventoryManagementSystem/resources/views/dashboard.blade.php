@@ -28,10 +28,10 @@
             <a href="{{ route('candles') }}">Candles</a>
             <a href="{{ route('orders') }}">Orders</a>
         </div>
-        <a href="#contact">Sales Report</a>
+        <a href="{{ route('sales') }}">Sales Report</a>
     </div>
 
-  <div class="logout-container"> <!-- New container for the logout button -->
+  <div class="logout-container"> 
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
         </form>
@@ -43,6 +43,55 @@
 
 <div class="content">
         <h2>Dashboard</h2>
+
+             <!--KEZ--> 
+    <div>     
+        <h4 class="aligned-heading">Inventory Summary </h4>
+        <hr class="aligned-line">
+    </div>
+
+    <div class="box-container">
+        
+            <div class="box">
+                <p>Low Stock Flowers
+                    <br><br>
+                    <p style="font-size: 30px;"> {{ $lowStockFlowers }} </p>
+                </p>
+            </div>
+            <div class="box">
+                <p>Low Stock Candles
+                    <br><br>
+                    <p style="font-size: 30px;"> {{ $lowStockCandles }} </p>
+                </p>
+            </div>
+            <div class="box">
+                <p>Out of Stock Flowers
+                    <br><br>
+                    <p style="font-size: 30px;"> {{ $outOfStockFlowers }} </p>
+                </p>
+            </div>
+
+            <div class="box" style="width: 14%;">
+                <p>Out of Stock Candles
+                    <br><br>
+                    <p style="font-size: 30px;"> {{ $outOfStockCandles }} </p>
+                </p>
+            </div>
+            
+
+    </div>
+             
+   
+        <h4 class="aligned-heading">Sales Report Summary</h4>
+       
+
+    <div class="sales">   
+        <div class="graph">
+            
+        </div>
+                <p >Monthly Sales Summary</p>
+   </div> 
+
         
     </div>
 </body>
