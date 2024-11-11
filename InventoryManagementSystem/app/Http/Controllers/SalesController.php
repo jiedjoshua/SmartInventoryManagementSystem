@@ -23,19 +23,19 @@ public function filterSales(Request $request)
     // Fetch flower sales for the month in 2024
     $flowerSales = Flower::whereHas('salesData', function ($query) use ($month) {
         $query->where('month', $month)
-              ->where('year', 2024);  // Ensure the year is 2024
+              ->where('year', 2023);  // Ensure the year is 2024
     })->with(['salesData' => function ($query) use ($month) {
         $query->where('month', $month)
-              ->where('year', 2024);  // Ensure the year is 2024
+              ->where('year', 2023);  // Ensure the year is 2024
     }])->get();
 
     // Fetch candle sales for the month in 2024
     $candleSales = Candle::whereHas('salesData', function ($query) use ($month) {
         $query->where('month', $month)
-              ->where('year', 2024);  // Ensure the year is 2024
+              ->where('year', 2023);  // Ensure the year is 2024
     })->with(['salesData' => function ($query) use ($month) {
         $query->where('month', $month)
-              ->where('year', 2024);  // Ensure the year is 2024
+              ->where('year', 2023);  // Ensure the year is 2024
     }])->get();
 
     // Return the data as JSON
@@ -68,7 +68,7 @@ public function getSalesOverview()
 
     // Fetch flower sales data for the year 2024, grouped by month
     $flowerSales = Flower::with(['salesData' => function ($query) {
-        $query->where('year', 2024); // Filter by year 2024
+        $query->where('year', 2023); // Filter by year 2024
     }])->get();
 
     foreach ($flowerSales as $flower) {
@@ -88,7 +88,7 @@ public function getSalesOverview()
 
     // Fetch candle sales data for the year 2024, grouped by month
     $candleSales = Candle::with(['salesData' => function ($query) {
-        $query->where('year', 2024); // Filter by year 2024
+        $query->where('year', 2023); // Filter by year 2024
     }])->get();
 
     foreach ($candleSales as $candle) {
