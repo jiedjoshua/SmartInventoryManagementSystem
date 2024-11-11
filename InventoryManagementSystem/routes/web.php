@@ -25,6 +25,10 @@ Route::get('/sales-overview', [SalesController::class, 'getSalesOverview']);
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 
+// In your `web.php` routes file
+Route::get('/api/predict-orders', 'PredictionController@getPredictedOrders')->name('predict.orders');
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

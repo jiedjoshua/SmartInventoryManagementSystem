@@ -1,0 +1,122 @@
+[
+    {
+        "Product ID": 2,
+        "product_name": "Tulip",
+        "product_type": "Flower",
+        "quantity": 40
+    },
+    {
+        "Product ID": 3,
+        "product_name": "Lily",
+        "product_type": "Flower",
+        "quantity": 33
+    },
+    {
+        "Product ID": 4,
+        "product_name": "Sunflower",
+        "product_type": "Flower",
+        "quantity": 37
+    },
+    {
+        "Product ID": 5,
+        "product_name": "Orchid",
+        "product_type": "Flower",
+        "quantity": 32
+    },
+    {
+        "Product ID": 6,
+        "product_name": "Daisy",
+        "product_type": "Flower",
+        "quantity": 54
+    },
+    {
+        "Product ID": 7,
+        "product_name": "Peony",
+        "product_type": "Flower",
+        "quantity": 39
+    },
+    {
+        "Product ID": 8,
+        "product_name": "Jasmine",
+        "product_type": "Flower",
+        "quantity": 28
+    },
+    {
+        "Product ID": 9,
+        "product_name": "Lavender",
+        "product_type": "Flower",
+        "quantity": 30
+    },
+    {
+        "Product ID": 10,
+        "product_name": "Carnation",
+        "product_type": "Flower",
+        "quantity": 45
+    },
+    {
+        "Product ID": 1,
+        "product_name": "Rose",
+        "product_type": "Flower",
+        "quantity": 40
+    },
+    {
+        "Product ID": 1,
+        "product_name": "White Candle",
+        "product_type": "Candle",
+        "quantity": 40
+    },
+    {
+        "Product ID": 2,
+        "product_name": "Lavender Bliss",
+        "product_type": "Candle",
+        "quantity": 41
+    },
+    {
+        "Product ID": 3,
+        "product_name": "Vanilla Dream",
+        "product_type": "Candle",
+        "quantity": 34
+    },
+    {
+        "Product ID": 4,
+        "product_name": "Citrus Breeze",
+        "product_type": "Candle",
+        "quantity": 37
+    },
+    {
+        "Product ID": 5,
+        "product_name": "Eucalyptus Fresh",
+        "product_type": "Candle",
+        "quantity": 32
+    },
+    {
+        "Product ID": 6,
+        "product_name": "Ocean Mist",
+        "product_type": "Candle",
+        "quantity": 54
+    },
+    {
+        "Product ID": 7,
+        "product_name": "Rosemary Sage",
+        "product_type": "Candle",
+        "quantity": 39
+    },
+    {
+        "Product ID": 8,
+        "product_name": "Cinnamon Spice",
+        "product_type": "Candle",
+        "quantity": 29
+    },
+    {
+        "Product ID": 9,
+        "product_name": "Tropical Escape",
+        "product_type": "Candle",
+        "quantity": 30
+    },
+    {
+        "Product ID": 10,
+        "product_name": "Winter Wonderland",
+        "product_type": "Candle",
+        "quantity": 45
+    }
+]
