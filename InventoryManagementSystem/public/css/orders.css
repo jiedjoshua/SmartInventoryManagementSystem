@@ -124,38 +124,18 @@ body {
     float: right;
     padding-right: 8px;
 }
-
-
-.content {
-    margin-left: 360px;
-    margin-top: 18px;
-    margin-right: 50px;
-    padding: 20px;
-    width: calc(100% - 300px);
-    background-color: #FDFDFD;
-    overflow-x: auto; /* Allow horizontal scrolling */
-}
-
-
 /* Table Styling */
-
 .content table {
     width: 100%; /* Full width */
-    min-width: 100%;
     border-collapse: collapse; /* No space between borders */
     margin-top: 20px; /* Space above the table */
-    max-height: 300px; /* Limit the height of the table */
-    overflow-y: auto; /* Allow vertical scrolling */
-    display: block; /* Make the table a block element to enable scrolling */
 }
 
-/* Adjust the column width */
 .content th, .content td {
     border: 1px solid #713737; /* Table borders */
     padding: 20px; /* Padding for each cell */
     text-align: center;
     font-family: sans-serif;
-    min-width: 270px; /* Minimum column width to prevent squishing */
 }
 
 .content th {
@@ -171,7 +151,6 @@ body {
 .content tr:hover {
     background-color: #F1E5E5; /* Hover effect */
 }
-
 
 #product-type {
     padding: 10px;
