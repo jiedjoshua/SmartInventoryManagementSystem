@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #713737;
+}
+
+.login-container {
+    width: 537px;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDFDFD;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h1{
+    text-align: center;
+    color: #713737;
+    font-family: 'Playfair Display', serif;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 70%;
+}
+
+p{
+    text-align: center;
+    color: #713737;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+    color: #713737;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 5;
+    line-height: 4%;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    background-color: #713737;
+    color: white;
+    border: 2px solid transparent; /* Add transparent border to avoid movement */
+    border-radius: 15px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+button:hover {
+    background-color: #FDFDFD;
+    border-color: #713737; /* Change border color without changing size */
+    color: #713737;
+}
+
+
+input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #713737; 
+    outline: none; 
+    width: 400px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 5;
+    font-size: 15px;
+    color: #713737;
+}
+
+input:focus {
+    border-bottom: 2px solid #713737; /* Optional: Change bottom border on focus */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin:0;
+    padding: 0;
+    line-height: 0%;
+}
+
