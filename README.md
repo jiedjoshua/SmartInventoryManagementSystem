@@ -43,9 +43,9 @@ Make sure you have Composer installed to manage PHP dependencies.
 composer install
 ```
 ### Configure .env file
-DB_DATABASE=inventorymanagementsystem
-DB_USERNAME=root
-DB_PASSWORD=
+- DB_DATABASE=inventorymanagementsystem
+- DB_USERNAME=root
+- DB_PASSWORD=
 
 ### Database Setup
 - Open XAMPP then start the apache and mysql
