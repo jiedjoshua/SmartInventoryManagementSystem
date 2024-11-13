@@ -34,7 +34,7 @@ The **Smart Inventory Management System** is designed to help flower shops effic
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/jiedjoshua/SmartInventoryManagementSystem/](https://github.com/jiedjoshua/SmartInventoryManagementSystem.git
+git clone https://github.com/jiedjoshua/SmartInventoryManagementSystem.git
 cd InventoryManagementSystem
 ```
 ### Install Dependencies
